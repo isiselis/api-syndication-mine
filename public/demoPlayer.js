@@ -30,7 +30,7 @@ function DemoPlayer(options) {
             // player backend configuration
             playerType: null,
             playerSettings: {
-                key: null
+                key: '8ec47714-0325-4d49-a2fb-1ebeeb8e0a0d'
             },
             // client identification & access token
             deviceName: null,
