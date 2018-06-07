@@ -41,6 +41,7 @@ function DemoPlayerBitmovinAdapter(playerContainer, options) {
                 source: {
                     dash: resPlayback.contentUrl,
                     hls: resPlayback.contentUrl,
+		    options: {withCredentials: true, manifestWithCredentials: true},
                     drm: {
                         widevine: {
                             LA_URL: resPlayback.licenseUrl
