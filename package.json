@@ -1,0 +1,32 @@
+{
+  "name": "test-player",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "dante",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^4.0.0",
+    "express": "^4.15.4",
+    "http-proxy-middleware": "^0.17.4",
+    "lodash": "^4.17.4",
+    "path": "^0.12.7",
+    "query-string": "^5.0.0",
+    "url": "^0.11.0"
+  },
+  "devDependencies": {},
+  "description": "A test player for FOX Syndication API.",
+  "repository": {
+    "type": "git",
+    "url": "none"
+  },
+  "keywords": [
+    "Test",
+    "player"
+  ],
+  "engines": {
+    "node": "6.10.2"
+  }
+}

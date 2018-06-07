@@ -1,0 +1,7 @@
+API_DOMAIN=fox-syndication-v3.cloudhub.io
+
+# DEV: API_DOMAIN=fox-syndication-v3-dev.cloudhub.io
+
+# Your Cloudhub credentials
+client_id=1a8b84b5c52d4d299ec55826fb2e90a9
+client_secret=3fa1d901c74a46be85AEE818EE6F7099
