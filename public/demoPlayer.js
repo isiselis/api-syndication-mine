@@ -471,33 +471,6 @@ function DemoPlayer(options) {
     self.showContentDetails = function (contentType, contentId) {
         let response = callContent(contentType, contentId)
                 .then(function (res) {
-                    let metadata = res.metadata.length ? res.metadata[0] : res.metadata;
-                    let title = metadata.title || res.title;
-                    let description = metadata.synopsis || res.description;
-                    let links = metadata.links || res.links;
-                    let image = null;
-                    if (links.length) {
-                        image = links[0].url;
-                    }
-
-                    // Show some content metadata
-                    self.$contentTitle.text(title);
-                    document.title = 'FOX | ' + title;
-                    self.$contentDescription.text(description);
-                    if (image) {
-                        /***
-                         * NOTE: As this is a web client, the browser will handle
-                         * automatically all cache-related issues.
-                         * If you work on some non-web client, you may need to take
-                         * care yourself by grabing the Date header on image responses
-                         * and including the If-Modified-Since header on your requests.
-                         * Refer the *Image Assets Cache* section on the API portal
-                         * for further details.
-                         ***/
-                        document.body.style.backgroundImage = "url('" + image + "')";
-                    }
-                    console.log('Got ' + title + " - Image: " + image);
-
                     if (contentType === 'show') {
                         throw 'Shows are NOT playable; please try with an episode, movie or live event instead.';
                     }
