@@ -37,7 +37,7 @@ function DemoPlayerBitmovinAdapter(playerContainer, options) {
                     bitmovin: true,
                     level: bitmovin.player.LOGLEVEL.LOG
                 },
-                key: options.key,
+                key: '8ec47714-0325-4d49-a2fb-1ebeeb8e0a0d',
                 source: {
                     dash: resPlayback.contentUrl,
                     hls: resPlayback.contentUrl,
